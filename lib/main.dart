@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_card/challenge.dart';
+
 void main() {
   runApp(MyApp());
   // runApp(const Challenge());
@@ -14,33 +15,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                width: 100.0,
-                height: double.infinity,
-                color: Colors.blue,
+          child: Column(
+            children: const <Widget>[
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/avatar01.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Container(
-                width: 100.0,
-                height: double.infinity,
-                color: Colors.red,
+              Text(
+                'Yukiko Laurentiu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
