@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_card/challenge.dart';
+
 void main() {
-  runApp(MyApp());
-  // runApp(const Challenge());
+  runApp( const Challenge());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Challenge extends StatelessWidget {
+  const Challenge({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
