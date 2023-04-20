@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter/src/material/colors.dart';
 import 'package:my_card/challenge.dart';
 
 void main() {
@@ -16,19 +17,28 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            children: const <Widget>[
-              CircleAvatar(
+            children: <Widget>[
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/avatar01.jpg'),
               ),
-              Text(
+              const Text(
                 'Yukiko Laurentiu',
                 style: TextStyle(
+                  fontFamily: 'Lobster',
                   color: Colors.white,
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text('JUNIOR FULL STACK DEVELOPER',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    color: Colors.teal.shade200,
+                    fontSize: 15.0,
+                    letterSpacing: 1.5,
+                    fontWeight: FontWeight.bold,
+                  )),
             ],
           ),
         ),

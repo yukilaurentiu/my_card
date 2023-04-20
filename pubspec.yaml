@@ -23,3 +23,10 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+  fonts:
+  - family: Lobster
+    fonts:
+      - asset: fonts/Lobster-Regular.ttf
+  - family: SourceSansPro
+    fonts:
+      - asset: fonts/SourceSansPro-Regular.ttf
