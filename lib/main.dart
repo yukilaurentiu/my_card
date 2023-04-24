@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const CircleAvatar(
                 radius: 50.0,
@@ -39,42 +40,41 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 1.5,
                     fontWeight: FontWeight.bold,
                   )),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    const FaIcon(FontAwesomeIcons.phone, color: Colors.teal),
-                    const SizedBox(
-                      width: 10.0,
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(color: Colors.teal.shade100),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading:
+                      const FaIcon(FontAwesomeIcons.phone, color: Colors.teal),
+                  title: Text(
+                    '+ 1 604 356 5379',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 15.0,
                     ),
-                    Text('+ 1 604 356 5379',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 15.0,
-                        )),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    const Icon(FontAwesomeIcons.envelope, color: Colors.teal),
-                    const SizedBox(
-                      width: 10.0,
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading:
+                      const Icon(FontAwesomeIcons.envelope, color: Colors.teal),
+                  title: Text(
+                    'yuki.laurentiu@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 15.0,
                     ),
-                    Text('yuki.laurentiu@gmail.com',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 15.0,
-                        )),
-                  ],
+                  ),
                 ),
               ),
             ],
